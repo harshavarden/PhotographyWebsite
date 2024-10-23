@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/gallery">Gallery</a> |
+            <a href="/upload">Upload Image</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="gallery">
+            {% for image in images %}
+            <div class="image">
+                <img src="/static/images/{{ image }}" alt="{{ image }}">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Photography Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
