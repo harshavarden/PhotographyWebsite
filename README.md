@@ -1,4 +1,4 @@
-# PhotographyWebsite
+# PhotographyWebsite using Python Fast API
 Backend code developed with python's Fast API for ease of developement and use
 
 Look as a code option above for clear structure to be seen
